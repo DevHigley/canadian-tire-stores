@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: monospace;
+}
+
+.map-container {
+	width: 70vw;
+	height: 100vh;
+}
+
+.App {
+	display: flex;
+	flex-direction: row;
+}
