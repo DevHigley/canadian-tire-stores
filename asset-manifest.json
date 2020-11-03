@@ -1,29 +1,20 @@
 {
   "files": {
-    "main.css": "/canadian-tire-stores/static/css/main.e88ff37d.chunk.css",
-    "main.js": "/canadian-tire-stores/static/js/main.da20e2e6.chunk.js",
-    "main.js.map": "/canadian-tire-stores/static/js/main.da20e2e6.chunk.js.map",
-    "runtime-main.js": "/canadian-tire-stores/static/js/runtime-main.271eb0cd.js",
-    "runtime-main.js.map": "/canadian-tire-stores/static/js/runtime-main.271eb0cd.js.map",
-    "static/js/2.55e84a60.chunk.js": "/canadian-tire-stores/static/js/2.55e84a60.chunk.js",
-    "static/js/2.55e84a60.chunk.js.map": "/canadian-tire-stores/static/js/2.55e84a60.chunk.js.map",
-    "static/js/3.0677868e.chunk.js": "/canadian-tire-stores/static/js/3.0677868e.chunk.js",
-    "static/js/3.0677868e.chunk.js.map": "/canadian-tire-stores/static/js/3.0677868e.chunk.js.map",
-    "static/js/4.08e9a54b.chunk.js": "/canadian-tire-stores/static/js/4.08e9a54b.chunk.js",
-    "static/js/4.08e9a54b.chunk.js.map": "/canadian-tire-stores/static/js/4.08e9a54b.chunk.js.map",
-    "static/js/5.c9c8cfb1.chunk.js": "/canadian-tire-stores/static/js/5.c9c8cfb1.chunk.js",
-    "static/js/5.c9c8cfb1.chunk.js.map": "/canadian-tire-stores/static/js/5.c9c8cfb1.chunk.js.map",
+    "main.css": "/canadian-tire-stores/static/css/main.f18c33c6.chunk.css",
+    "main.js": "/canadian-tire-stores/static/js/main.80078d93.chunk.js",
+    "main.js.map": "/canadian-tire-stores/static/js/main.80078d93.chunk.js.map",
+    "runtime-main.js": "/canadian-tire-stores/static/js/runtime-main.df291d3f.js",
+    "runtime-main.js.map": "/canadian-tire-stores/static/js/runtime-main.df291d3f.js.map",
+    "static/js/2.0915c5e3.chunk.js": "/canadian-tire-stores/static/js/2.0915c5e3.chunk.js",
+    "static/js/2.0915c5e3.chunk.js.map": "/canadian-tire-stores/static/js/2.0915c5e3.chunk.js.map",
     "index.html": "/canadian-tire-stores/index.html",
-    "static/css/main.e88ff37d.chunk.css.map": "/canadian-tire-stores/static/css/main.e88ff37d.chunk.css.map",
-    "static/js/2.55e84a60.chunk.js.LICENSE.txt": "/canadian-tire-stores/static/js/2.55e84a60.chunk.js.LICENSE.txt",
-    "static/js/3.0677868e.chunk.js.LICENSE.txt": "/canadian-tire-stores/static/js/3.0677868e.chunk.js.LICENSE.txt",
-    "static/js/4.08e9a54b.chunk.js.LICENSE.txt": "/canadian-tire-stores/static/js/4.08e9a54b.chunk.js.LICENSE.txt",
-    "static/js/5.c9c8cfb1.chunk.js.LICENSE.txt": "/canadian-tire-stores/static/js/5.c9c8cfb1.chunk.js.LICENSE.txt"
+    "static/css/main.f18c33c6.chunk.css.map": "/canadian-tire-stores/static/css/main.f18c33c6.chunk.css.map",
+    "static/js/2.0915c5e3.chunk.js.LICENSE.txt": "/canadian-tire-stores/static/js/2.0915c5e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.271eb0cd.js",
-    "static/js/3.0677868e.chunk.js",
-    "static/css/main.e88ff37d.chunk.css",
-    "static/js/main.da20e2e6.chunk.js"
+    "static/js/runtime-main.df291d3f.js",
+    "static/js/2.0915c5e3.chunk.js",
+    "static/css/main.f18c33c6.chunk.css",
+    "static/js/main.80078d93.chunk.js"
   ]
 }
