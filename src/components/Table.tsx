@@ -1,32 +1,30 @@
-import React, { forwardRef } from "react";
-import MaterialTable from "material-table";
-import ArrowDownward from "@material-ui/icons/ArrowDownward";
+import * as React from "react";
+import { DataGrid } from "@material-ui/data-grid";
+
+import { store } from "../logic";
 
 interface Props {
-	stores: any;
-	onRowClick: (event, rowData) => void;
+	stores: store[];
+	onRowClick: (param) => void;
 }
 
-export default function Table({ stores, onRowClick }: Props) {
-	const processData = () => {
-		return stores.map((store) => {
-			return { name: store.name, retail: store.sales.retail, service: store.sales.service };
-		});
-	};
+export default function DataTable({ stores, onRowClick }: Props) {
+	const parentWidth = window.innerWidth * 0.3;
+
+	const columns = [
+		{ field: "id", hide: true },
+		{ field: "name", headerName: "Store", width: parentWidth * 0.4 },
+		{ field: "retail", headerName: "Retail (ytd)", width: parentWidth * 0.3, valueFormatter: ({ value }) => value?.toLocaleString() },
+		{ field: "service", headerName: "Service (ytd)", width: parentWidth * 0.25, valueFormatter: ({ value }) => value?.toLocaleString() }
+	];
+
+	const rows = stores.map((store) => {
+		return { id: store.id, name: store.name, retail: store.retail, service: store.service };
+	});
 
 	return (
-		<div style={{ width: "30vw", height: "100vh", overflow: "scroll" }}>
-			<MaterialTable
-				options={{ search: false, paging: false, showTitle: false, toolbar: false }}
-				icons={{ SortArrow: forwardRef((props, ref) => <ArrowDownward {...props} ref={ref} />) }}
-				columns={[
-					{ title: "Store", field: "name", type: "string" },
-					{ title: "Retail YTD", field: "retail", type: "currency" },
-					{ title: "Service YTD", field: "service", type: "currency" }
-				]}
-				data={processData()}
-				onRowClick={onRowClick}
-			/>
+		<div className={"table-container"}>
+			<DataGrid className={""} columns={columns} rows={rows} onRowClick={onRowClick} autoPageSize />
 		</div>
 	);
 }

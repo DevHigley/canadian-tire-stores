@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React from "react";
 import { Slider, Rail, Handles, Tracks, Ticks } from "react-compound-slider";
 
 import Tick from "./Tick";
@@ -6,38 +6,38 @@ import Track from "./Track";
 import Handle from "./Handle";
 
 const sliderStyle: React.CSSProperties = {
+	width: "90%",
 	margin: "5%",
-	position: "relative",
-	width: "90%"
+	position: "relative"
 };
 
 const railStyle: React.CSSProperties = {
-	position: "absolute",
-	width: "100%",
 	height: 14,
+	width: "100%",
 	borderRadius: 7,
 	cursor: "pointer",
+	position: "absolute",
 	backgroundColor: "rgb(155,155,155)"
 };
 
 interface Props {
-	volumeRange: readonly number[];
-	setVolumeRange: Dispatch<React.SetStateAction<readonly number[]>>;
+	domain: number[];
+	range: readonly number[];
+	onChange: (values: number[]) => void;
+	onUpdate: (values: number[]) => void;
 }
 
-export default function VolumeSlider({ volumeRange, setVolumeRange }: Props) {
-	const domain: number[] = [0, 25];
-
+export default function VolumeSlider({ domain, range, onChange, onUpdate }: Props) {
 	return (
-		<div style={{ height: 120, width: "65vw", position: "absolute", bottom: "0" }}>
+		<div className={"slider-container"}>
 			<Slider
 				mode={1}
 				step={1}
+				values={range}
 				domain={domain}
 				rootStyle={sliderStyle}
-				onChange={(values) => setVolumeRange(values)}
-				onUpdate={(values) => setVolumeRange(values)}
-				values={volumeRange}
+				onChange={(values) => onChange(values as number[])}
+				onUpdate={(values) => onUpdate(values as number[])}
 			>
 				<Rail>{({ getRailProps }) => <div style={railStyle} {...getRailProps()} />}</Rail>
 				<Handles>

@@ -4,11 +4,6 @@ body {
   font-family: monospace;
 }
 
-.map-container {
-  width: 70vw;
-  height: 100vh;
-}
-
 .App {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,5 +12,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.map-container {
+  width: 70vw;
+  height: 100vh;
+}
+
+.table-container {
+  width: 30vw;
+  height: 100vh;
+}
+
+.slider-container {
+  bottom: 0;
+  width: 65vw;
+  height: 120px;
+  position: absolute;
 }
 /*# sourceMappingURL=App.css.map */
