@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/canadian-tire-stores/static/css/main.f18c33c6.chunk.css",
-    "main.js": "/canadian-tire-stores/static/js/main.80078d93.chunk.js",
-    "main.js.map": "/canadian-tire-stores/static/js/main.80078d93.chunk.js.map",
+    "main.js": "/canadian-tire-stores/static/js/main.a565265b.chunk.js",
+    "main.js.map": "/canadian-tire-stores/static/js/main.a565265b.chunk.js.map",
     "runtime-main.js": "/canadian-tire-stores/static/js/runtime-main.df291d3f.js",
     "runtime-main.js.map": "/canadian-tire-stores/static/js/runtime-main.df291d3f.js.map",
     "static/js/2.0915c5e3.chunk.js": "/canadian-tire-stores/static/js/2.0915c5e3.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.df291d3f.js",
     "static/js/2.0915c5e3.chunk.js",
     "static/css/main.f18c33c6.chunk.css",
-    "static/js/main.80078d93.chunk.js"
+    "static/js/main.a565265b.chunk.js"
   ]
 }
