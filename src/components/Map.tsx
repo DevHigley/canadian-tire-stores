@@ -13,9 +13,8 @@ interface Props {
 
 function Map({ bootstrapURLKeys, center, zoom, stores }: Props) {
 	const renderStores = (): JSX.Element[] => {
-		const renderedStores = stores.map((store, index) => <Pin key={index} store={store} lat={store.lat} lng={store.lng} />);
-		console.log("renderedStores");
-		return renderedStores;
+		console.log("renderStores");
+		return stores.map((store, index) => <Pin key={index} store={store} lat={store.lat} lng={store.lng} />);
 	};
 
 	console.log("renderMap");
